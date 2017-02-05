@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D32720451E47328C00B71A43 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D32720441E47328C00B71A43 /* Podfile */; };
+		D37727E41E47192800911DFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37727E31E47192800911DFA /* AppDelegate.swift */; };
+		D37727E61E47192800911DFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37727E51E47192800911DFA /* ViewController.swift */; };
+		D37727E91E47192800911DFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37727E71E47192800911DFA /* Main.storyboard */; };
+		D37727EB1E47192800911DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37727EA1E47192800911DFA /* Assets.xcassets */; };
+		D37727EE1E47192800911DFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37727EC1E47192800911DFA /* LaunchScreen.storyboard */; };
+		D37727F81E471E2D00911DFA /* StagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37727F71E471E2D00911DFA /* StagesTableViewController.swift */; };
+		D37727FB1E47301000911DFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37727FA1E47301000911DFA /* Constants.swift */; };
+		EC1873DD3EC9B665EF227ABA /* Pods_Trello_Table_Views.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3FB5841FB99290293B82DB /* Pods_Trello_Table_Views.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E3FB5841FB99290293B82DB /* Pods_Trello_Table_Views.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trello_Table_Views.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D6CD242A0DEEF444969EBF /* Pods-Trello Table Views.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trello Table Views.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trello Table Views/Pods-Trello Table Views.release.xcconfig"; sourceTree = "<group>"; };
+		4ABFF71B93B04088A10E5E48 /* Pods-Trello Table Views.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trello Table Views.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trello Table Views/Pods-Trello Table Views.debug.xcconfig"; sourceTree = "<group>"; };
+		D32720441E47328C00B71A43 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		D37727E01E47192800911DFA /* Trello Table Views.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trello Table Views.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D37727E31E47192800911DFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D37727E51E47192800911DFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D37727E81E47192800911DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D37727EA1E47192800911DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D37727ED1E47192800911DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D37727EF1E47192800911DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D37727F71E471E2D00911DFA /* StagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StagesTableViewController.swift; sourceTree = "<group>"; };
+		D37727FA1E47301000911DFA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D37727DD1E47192800911DFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC1873DD3EC9B665EF227ABA /* Pods_Trello_Table_Views.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79F579F169B51FC9C15111C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4ABFF71B93B04088A10E5E48 /* Pods-Trello Table Views.debug.xcconfig */,
+				45D6CD242A0DEEF444969EBF /* Pods-Trello Table Views.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D37727D71E47192800911DFA = {
+			isa = PBXGroup;
+			children = (
+				D37727E21E47192800911DFA /* Trello Table Views */,
+				D37727E11E47192800911DFA /* Products */,
+				79F579F169B51FC9C15111C5 /* Pods */,
+				D3C0D04A988CFA86852160E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D37727E11E47192800911DFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D37727E01E47192800911DFA /* Trello Table Views.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D37727E21E47192800911DFA /* Trello Table Views */ = {
+			isa = PBXGroup;
+			children = (
+				D37727E31E47192800911DFA /* AppDelegate.swift */,
+				D37727F91E47300200911DFA /* Controllers */,
+				D37727E71E47192800911DFA /* Main.storyboard */,
+				D37727EA1E47192800911DFA /* Assets.xcassets */,
+				D37727EC1E47192800911DFA /* LaunchScreen.storyboard */,
+				D37727EF1E47192800911DFA /* Info.plist */,
+				D37727FA1E47301000911DFA /* Constants.swift */,
+				D32720441E47328C00B71A43 /* Podfile */,
+			);
+			path = "Trello Table Views";
+			sourceTree = "<group>";
+		};
+		D37727F91E47300200911DFA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D37727E51E47192800911DFA /* ViewController.swift */,
+				D37727F71E471E2D00911DFA /* StagesTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D3C0D04A988CFA86852160E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E3FB5841FB99290293B82DB /* Pods_Trello_Table_Views.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D37727DF1E47192800911DFA /* Trello Table Views */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D37727F21E47192800911DFA /* Build configuration list for PBXNativeTarget "Trello Table Views" */;
+			buildPhases = (
+				3D4187315509B092A71BF7C3 /* [CP] Check Pods Manifest.lock */,
+				D37727DC1E47192800911DFA /* Sources */,
+				D37727DD1E47192800911DFA /* Frameworks */,
+				D37727DE1E47192800911DFA /* Resources */,
+				3759EDAB5F3527D46A3EEC13 /* [CP] Embed Pods Frameworks */,
+				6EB2F7475EFD1E0725DB0176 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Trello Table Views";
+			productName = "Trello Table Views";
+			productReference = D37727E01E47192800911DFA /* Trello Table Views.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D37727D81E47192800911DFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Testing;
+				TargetAttributes = {
+					D37727DF1E47192800911DFA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z3S9BFKG24;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D37727DB1E47192800911DFA /* Build configuration list for PBXProject "Trello Table Views" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D37727D71E47192800911DFA;
+			productRefGroup = D37727E11E47192800911DFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D37727DF1E47192800911DFA /* Trello Table Views */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D37727DE1E47192800911DFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37727EE1E47192800911DFA /* LaunchScreen.storyboard in Resources */,
+				D37727EB1E47192800911DFA /* Assets.xcassets in Resources */,
+				D32720451E47328C00B71A43 /* Podfile in Resources */,
+				D37727E91E47192800911DFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3759EDAB5F3527D46A3EEC13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trello Table Views/Pods-Trello Table Views-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D4187315509B092A71BF7C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6EB2F7475EFD1E0725DB0176 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trello Table Views/Pods-Trello Table Views-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D37727DC1E47192800911DFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37727F81E471E2D00911DFA /* StagesTableViewController.swift in Sources */,
+				D37727E61E47192800911DFA /* ViewController.swift in Sources */,
+				D37727E41E47192800911DFA /* AppDelegate.swift in Sources */,
+				D37727FB1E47301000911DFA /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D37727E71E47192800911DFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D37727E81E47192800911DFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D37727EC1E47192800911DFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D37727ED1E47192800911DFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D37727F01E47192800911DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D37727F11E47192800911DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D37727F31E47192800911DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ABFF71B93B04088A10E5E48 /* Pods-Trello Table Views.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z3S9BFKG24;
+				INFOPLIST_FILE = "Trello Table Views/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trello.Trello-Table-Views";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D37727F41E47192800911DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45D6CD242A0DEEF444969EBF /* Pods-Trello Table Views.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z3S9BFKG24;
+				INFOPLIST_FILE = "Trello Table Views/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trello.Trello-Table-Views";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D37727DB1E47192800911DFA /* Build configuration list for PBXProject "Trello Table Views" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D37727F01E47192800911DFA /* Debug */,
+				D37727F11E47192800911DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D37727F21E47192800911DFA /* Build configuration list for PBXNativeTarget "Trello Table Views" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D37727F31E47192800911DFA /* Debug */,
+				D37727F41E47192800911DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D37727D81E47192800911DFA /* Project object */;
+}

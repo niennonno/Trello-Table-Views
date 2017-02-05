@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'AlamofireNetworkActivityIndicator', '~> 2.0'
+
+target 'Trello Table Views' do
+pod 'Alamofire', '~> 4.3'
+end

@@ -1,0 +1,6 @@
+framework module Pods_Trello_Table_Views {
+  umbrella header "Pods-Trello Table Views-umbrella.h"
+
+  export *
+  module * { export * }
+}
