@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "94B34EE63B40C40CD00DC9F0BFFAA0CD"
-               BuildableName = "Pods_Trello_Table_Views.framework"
-               BlueprintName = "Pods-Trello Table Views"
+               BlueprintIdentifier = "14B9E4C0BF6F7FC8CEF08F8ADA3E31C0"
+               BuildableName = "SocketIO.framework"
+               BlueprintName = "Socket.IO-Client-Swift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "94B34EE63B40C40CD00DC9F0BFFAA0CD"
-            BuildableName = "Pods_Trello_Table_Views.framework"
-            BlueprintName = "Pods-Trello Table Views"
+            BlueprintIdentifier = "14B9E4C0BF6F7FC8CEF08F8ADA3E31C0"
+            BuildableName = "SocketIO.framework"
+            BlueprintName = "Socket.IO-Client-Swift"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D32720451E47328C00B71A43 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D32720441E47328C00B71A43 /* Podfile */; };
 		D37727E41E47192800911DFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37727E31E47192800911DFA /* AppDelegate.swift */; };
 		D37727E61E47192800911DFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37727E51E47192800911DFA /* ViewController.swift */; };
 		D37727E91E47192800911DFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37727E71E47192800911DFA /* Main.storyboard */; };
@@ -22,7 +21,6 @@
 		1E3FB5841FB99290293B82DB /* Pods_Trello_Table_Views.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trello_Table_Views.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D6CD242A0DEEF444969EBF /* Pods-Trello Table Views.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trello Table Views.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trello Table Views/Pods-Trello Table Views.release.xcconfig"; sourceTree = "<group>"; };
 		4ABFF71B93B04088A10E5E48 /* Pods-Trello Table Views.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trello Table Views.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trello Table Views/Pods-Trello Table Views.debug.xcconfig"; sourceTree = "<group>"; };
-		D32720441E47328C00B71A43 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		D37727E01E47192800911DFA /* Trello Table Views.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trello Table Views.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37727E31E47192800911DFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D37727E51E47192800911DFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 				D37727EC1E47192800911DFA /* LaunchScreen.storyboard */,
 				D37727EF1E47192800911DFA /* Info.plist */,
 				D37727FA1E47301000911DFA /* Constants.swift */,
-				D32720441E47328C00B71A43 /* Podfile */,
 			);
 			path = "Trello Table Views";
 			sourceTree = "<group>";
@@ -170,7 +167,6 @@
 			files = (
 				D37727EE1E47192800911DFA /* LaunchScreen.storyboard in Resources */,
 				D37727EB1E47192800911DFA /* Assets.xcassets in Resources */,
-				D32720451E47328C00B71A43 /* Podfile in Resources */,
 				D37727E91E47192800911DFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,9 +353,10 @@
 			baseConfigurationReference = 4ABFF71B93B04088A10E5E48 /* Pods-Trello Table Views.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = Z3S9BFKG24;
 				INFOPLIST_FILE = "Trello Table Views/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.trello.Trello-Table-Views";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -372,9 +369,10 @@
 			baseConfigurationReference = 45D6CD242A0DEEF444969EBF /* Pods-Trello Table Views.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = Z3S9BFKG24;
 				INFOPLIST_FILE = "Trello Table Views/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.trello.Trello-Table-Views";
 				PRODUCT_NAME = "$(TARGET_NAME)";

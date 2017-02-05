@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SocketIO
 
 class StagesTableViewController: UITableViewController {
     
@@ -16,12 +17,40 @@ class StagesTableViewController: UITableViewController {
     var isFilterApplied = false
     var filteredMonth = String()
     
+    let socket = SocketIOClient(socketURL: URL(string: "ws://samrith.ithaka.travel")!, config: [.log(true), .forcePolling(true)])
+
+    
     var filteredUsers = Array(repeating: Array(arrayLiteral: User()), count: 6)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
         self.navigationItem.title = "User Data"
+        
+        socket.connect()
+
+        socket.on("connect") {data, ack in
+            print("socket connected")
+        }
+        
+        socket.on("currentAmount") {data, ack in
+            if let cur = data[0] as? Double {
+                self.socket.emitWithAck("canUpdate", cur).timingOut(after: 0) {data in
+                    self.socket.emit("update", ["amount": cur + 2.50])
+                }
+                
+                ack.with("Got your currentAmount", "dude")
+            }
+        }
+        
+        socket.onAny { (anEvent) in
+            print("Them event", anEvent.event)
+        }
+        
+        socket.on("update_status") { (data, ack) in
+            self.parseData(kData: data)
+        }
         
         let reOrder = UIBarButtonItem(title: "Reorder", style: .plain, target: self, action: #selector(reOrderData))
         self.navigationItem.rightBarButtonItem = reOrder
@@ -29,6 +58,53 @@ class StagesTableViewController: UITableViewController {
         let filter = UIBarButtonItem(title: "Filter", style: .plain, target: self, action: #selector(filterIt))
         self.navigationItem.leftBarButtonItem = filter
 
+    }
+    
+    
+    func parseData(kData: [Any]) {
+        print(kData)
+        let kData = kData[0] as! NSDictionary
+        let aUser = User()
+        aUser.id = kData["_id"] as! String
+        aUser.name = kData["name"] as! String
+        aUser.status = kData["status"] as! String
+        
+        let aDate = kData["tripDate"] as! String
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        aUser.tripDate = dateFormatter.date(from: aDate)!
+
+        for i in 0..<6 {
+            
+            for j in 0..<_USERS[i].count-1 {
+                if aUser.id == _USERS[i][j].id {
+                    _USERS[i].remove(at: j)
+                    break
+                }
+            }
+        }
+        
+        if aUser.status == "onboarding" {
+            _USERS[0].append(aUser)
+        } else if aUser.status == "education" {
+            _USERS[1].append(aUser)
+        } else if aUser.status == "planned" {
+            _USERS[2].append(aUser)
+        } else if aUser.status == "hotels" {
+            _USERS[3].append(aUser)
+        } else if aUser.status == "activities" {
+            _USERS[4].append(aUser)
+        } else if aUser.status == "complete" {
+            _USERS[5].append(aUser)
+        } else {
+            print("Error!")
+        }
+        
+        if isFilterApplied {
+            filterData(month: filteredMonth)
+        } else {
+            tableView.reloadData()
+        }
     }
     
     
